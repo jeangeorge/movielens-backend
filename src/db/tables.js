@@ -4,7 +4,7 @@ const FilmeGenero = require("./filme_genero");
 const Generos = require("./generos");
 const PalavrasChave = require("./palavras_chave");
 const Usuarios = require("./usuarios");
-const ConsultasBasicas = require("./consultas_basicas");
+const ConsultasObrigatorias = require("./consultas_obrigatorias");
 
 module.exports = {
   Avaliacoes,
@@ -13,5 +13,5 @@ module.exports = {
   Generos,
   PalavrasChave,
   Usuarios,
-  ConsultasBasicas
+  ConsultasObrigatorias
 };
