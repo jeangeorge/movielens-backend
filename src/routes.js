@@ -67,9 +67,9 @@ router.get("/api/usuarios", async (req, res) => {
   }
 });
 
-router.get("/api/consulta-obrigatoria1", async (req, res) => {
+router.get("/api/consulta-obrigatoria/1", async (req, res) => {
   try {
-    const consulta1 = await tables.ConsultasObrigatorias.consulta1;
+    const consulta1 = await tables.ConsultasObrigatorias.consulta1();
     res.json(consulta1);
   } catch (e) {
     console.log(e);
@@ -79,7 +79,7 @@ router.get("/api/consulta-obrigatoria1", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/2", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta2;
+    const usuarios = await tables.ConsultasObrigatorias.consulta2();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -89,7 +89,7 @@ router.get("/api/consulta-obrigatoria/2", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/3", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta3;
+    const usuarios = await tables.ConsultasObrigatorias.consulta3();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -99,7 +99,7 @@ router.get("/api/consulta-obrigatoria/3", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/4", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta4;
+    const usuarios = await tables.ConsultasObrigatorias.consulta4();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -109,7 +109,7 @@ router.get("/api/consulta-obrigatoria/4", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/5", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta5;
+    const usuarios = await tables.ConsultasObrigatorias.consulta5();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -119,7 +119,7 @@ router.get("/api/consulta-obrigatoria/5", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/6", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta6;
+    const usuarios = await tables.ConsultasObrigatorias.consulta6();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -129,7 +129,7 @@ router.get("/api/consulta-obrigatoria/6", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/7", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta7;
+    const usuarios = await tables.ConsultasObrigatorias.consulta7();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -139,7 +139,7 @@ router.get("/api/consulta-obrigatoria/7", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/8", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta8;
+    const usuarios = await tables.ConsultasObrigatorias.consulta8();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -149,7 +149,7 @@ router.get("/api/consulta-obrigatoria/8", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/9", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta9;
+    const usuarios = await tables.ConsultasObrigatorias.consulta9();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
@@ -159,7 +159,7 @@ router.get("/api/consulta-obrigatoria/9", async (req, res) => {
 
 router.get("/api/consulta-obrigatoria/10", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta10;
+    const usuarios = await tables.ConsultasObrigatorias.consulta10();
     res.json(usuarios);
   } catch (e) {
     console.log(e);
