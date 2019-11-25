@@ -67,4 +67,104 @@ router.get("/api/usuarios", async (req, res) => {
   }
 });
 
+router.get("/api/consulta-basica/1", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta1;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/2", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta2;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/3", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta3;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/4", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta4;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/5", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta5;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/6", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta6;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/7", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta7;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/8", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta8;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/9", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta9;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
+router.get("/api/consulta-basica/10", async (req, res) => {
+  try {
+    const usuarios = await tables.ConsultasBasicas.consulta10;
+    res.json(usuarios);
+  } catch (e) {
+    console.log(e);
+    res.sendStatus(500);
+  }
+});
+
 module.exports = router;
