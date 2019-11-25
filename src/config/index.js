@@ -1,7 +1,5 @@
 const fs = require("fs");
 
-const url = co;
-
 module.exports = {
   mysql: {
     host: process.env.MY_HOST ? process.env.MY_HOST : "localhost",
