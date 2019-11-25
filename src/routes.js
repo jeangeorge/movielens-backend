@@ -67,10 +67,10 @@ router.get("/api/usuarios", async (req, res) => {
   }
 });
 
-router.get("/api/consulta-obrigatoria/1", async (req, res) => {
+router.get("/api/consulta-obrigatoria1", async (req, res) => {
   try {
-    const usuarios = await tables.ConsultasObrigatorias.consulta1;
-    res.json(usuarios);
+    const consulta1 = await tables.ConsultasObrigatorias.consulta1;
+    res.json(consulta1);
   } catch (e) {
     console.log(e);
     res.sendStatus(500);
