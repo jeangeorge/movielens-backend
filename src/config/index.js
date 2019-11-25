@@ -1,10 +1,10 @@
 const fs = require("fs");
 module.exports = {
   mysql: {
-    host: process.env.MY_HOST ? process.env.MY_HOST : "localhost",
+    host: "s9xpbd61ok2i7drv.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
     port: 3306,
-    user: process.env.MY_USER ? process.env.MY_USER : "root",
-    database: process.env.MY_DATABASE ? process.env.MY_DATABASE : "tp2",
-    password: process.env.MY_PASSWORD ? process.env.MY_PASSWORD : ""
+    user: "p4maq6ylr0593mjn",
+    database: "ihc4db69jvl4ir4c",
+    password: "seha2mc05dqi5nwm"
   }
 };
