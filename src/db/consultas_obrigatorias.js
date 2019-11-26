@@ -101,7 +101,7 @@ const consulta7 = async () => {
 const consulta8 = async () => {
   return new Promise((resolve, reject) => {
     Connection.query(
-      "SELECT titulo_filme,ano_lancamento,nome_genero,palavras_chave.palavra_chave_texto AS palavra_chave FROM filmes NATURAL JOIN filme_genero NATURAL JOIN generos INNER JOIN (SELECT * FROM palavras_chave WHERE palavra_chave_texto LIKE '%oscar%') AS palavras_chave ON filmes.id_filme = palavras_chave.id_filme ORDER BY ano_lancamento DESC, titulo_filme ASC,nome_genero ASC",
+      "SELECT titulo_filme, ano_lancamento, group_concat(DISTINCT nome_genero) AS generos, palavras_chave.palavra_chave_texto AS palavra_chave FROM filmes NATURAL JOIN filme_genero NATURAL JOIN generos INNER JOIN (SELECT * FROM palavras_chave WHERE palavra_chave_texto LIKE '%oscar%') AS palavras_chave ON filmes.id_filme = palavras_chave.id_filme GROUP BY titulo_filme, ano_lancamento, palavra_chave",
       (err, results) => {
         if (err) {
           return reject(err);
