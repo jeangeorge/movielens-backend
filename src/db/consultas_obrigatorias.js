@@ -87,7 +87,7 @@ const consulta6 = async () => {
 const consulta7 = async () => {
   return new Promise((resolve, reject) => {
     Connection.query(
-      "SELECT titulo_filme AS 'Titulo do Filme',nome_genero AS 'Gênero',nota AS Nota  FROM avaliacoes NATURAL JOIN filmes NATURAL JOIN filme_genero NATURAL JOIN generos WHERE nota = (SELECT MIN(nota) FROM avaliacoes)",
+      "SELECT titulo_filme AS 'Titulo do Filme', group_concat(distinct nome_genero) AS 'Gêneros',nota AS Nota  FROM avaliacoes NATURAL JOIN filmes NATURAL JOIN filme_genero NATURAL JOIN generos WHERE nota = (SELECT MIN(nota) FROM avaliacoes) GROUP BY titulo_filme, nota",
       (err, results) => {
         if (err) {
           return reject(err);
