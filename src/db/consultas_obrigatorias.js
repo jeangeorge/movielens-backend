@@ -17,7 +17,7 @@ const consulta1 = async () => {
 const consulta2 = async () => {
   return new Promise((resolve, reject) => {
     Connection.query(
-      "SELECT nome_genero FROM generos ORDER BY nome_genero ASC",
+      "SELECT nome_genero, count(*) AS filmes FROM generos NATURAL JOIN filme_genero NATURAL JOIN filmes GROUP BY nome_genero ORDER BY nome_genero ASC;",
       (err, results) => {
         if (err) {
           return reject(err);
